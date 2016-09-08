@@ -1,0 +1,33 @@
+ 1 cd 26415177
+2 touch tugasawk.txt
+3 nano tugasawk.txt
+4 cat tugasawk.net
+5 cat tugasawk.txt
+6 nano tugasawk.txt
+7 awk '{ gsub(|coba|dalam|di/, "misal"); print}' tugasawk.txt
+8 awk '{ gsub(/coba|dalam|di/, "misal"); print}' tugasawk.txt
+9 awk '{ $2 = ""; print}' tugasawk.txt
+10 awk 'ORS=NR%5?",":"\n"' tugasawk.txt
+11 awk '{a[i++] = $0} END {for (j=i-1; j>=0;) print a[j--]}' tugasawk.txt
+12 awk '{l=length(); s=int((79-1)/2); printf "%"(s+1)"s\n", $0}' tugasawk.txt
+13 awk '{sub(/^/, " "); print }' tugasawk.txt
+14 awk 'BEGIN {"mulai"; print }' tugasawk.txt
+15 awk 'END {print "akhir"}' tugasawk.txt
+16 nano tugasawk.txt
+17 awk 'BEGIN {print "awal"} {printf "%d. %s ", NR, $0} END {print "akhir"}' tugasawk.txt
+18 awk 'BEGIN {print "awal"} {printf "%d. %s\n", NR, $0} END {print "akhir"}' tugasawk.txt
+19 awk 'NF>2'
+20 awk 'NF>2 END {print "Number FIeld lebih dari dua"}' tugasawk.txt
+21 awk '{NF>2} END {print "Number FIeld lebih dari dua"}' tugasawk.txt
+22 awk '{NF>2} {printf "%d: %s\n", NF, $0}END {print "Number FIeld lebih dari dua"}' tugasawk.txt
+23 awk '{NF>4} {printf "%d: %s\n", NF, $0}END {print "Number FIeld lebih dari dua"}' tugasawk.txt
+24 awk 'NF > 4' tugasawk.txt
+25 ls
+26 cat tugasawk.txt
+27 awk 'NF > 4 {print ">4"}' tugasawk.txt
+28 awk 'NR < 3' tugasawk.txt
+29 awk 'NF > 4, NR==1, NR==8' tugasawk.txt
+30 awk 'NR==1, NR==8' tugasawk.txt
+31* awk '' tugasawk.txt
+
+
