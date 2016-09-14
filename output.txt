@@ -1,0 +1,6 @@
+awk 'BEGIN {print "Kategori\tBanyak\tJumlah\tRata-Rata"}
+{if ($3=="s") {tot=0; tot=tot+1; sum=0; sum=sum+$2}; 
+if($3=="ts") {tot1=0; tot1=tot1+1; sum=0; sum1=sum1+$2}; 
+if ($3=="ks"){tot2=0; tot2=tot2+1; sum2=0; sum2=sum2+$2}};
+END {printf ("KS\t%d\t%d\t%d\n S\t %d \t %d \t %d\n TS \t %d \t %d \t %d")
+, tot2, sum2, sum2/tot2, tot, sum, sum/tot, tot1, sum1, sum1/tot1}' makanan.scv 
